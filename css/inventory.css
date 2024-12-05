@@ -1,0 +1,108 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+  margin: 0;
+  min-height: 100vh;
+  display: block;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template:
+    "nav"
+    "main";
+}
+nav {
+  background-color: red;
+  height: 5rem;
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid black;
+  display: flex;
+}
+.header #manage,
+.header #user-name {
+  display: inline-flex;
+  margin-top: 0%;
+  padding-top: 0;
+}
+
+.header {
+  text-align: center;
+  position: relative;
+  top: -4rem;
+}
+
+.back-btn .fa-solid,
+.menu-btn #menu {
+  font-size: 2rem;
+}
+.back-btn #back {
+  border-radius: 5%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.user-manage {
+  position: relative;
+  top: -2rem;
+}
+
+.menu-btn #menu {
+  border-radius: 5%;
+  float: right;
+  margin-right: 2%;
+  margin-top: -6.5rem;
+  cursor: pointer;
+}
+.menu-btn {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  z-index: 1;
+  border: 1px solid;
+  border-radius: 2%;
+  padding: 0%;
+}
+
+.menu-btn:hover .dropdown-content {
+  display: block;
+  width: 15%;
+  float: right;
+  margin-top: -3.7rem;
+  margin-right: 2rem;
+}
+.dropdown-content p:hover {
+  color: rgb(77, 77, 228);
+  cursor: pointer;
+}
+.item-bpx {
+  display: table-column;
+  width: 50%;
+}
+input[type="search"] {
+  width: 25%;
+  background-color: #f9f9f9;
+}
+.item-box {
+  display: flex;
+  width: 50vw;
+  height: 100vh;
+}
+#item-box-list {
+  background-color: white;
+  display: flex;
+  border: 2px solid;
+  width: 50vw;
+  height: 100vh;
+}

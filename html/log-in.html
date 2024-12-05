@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-in</title>
+  </head>
+  <body>
+    <div class="container">
+     
+      <div class="reg-forms"></div>
+      <form action="" method="get">
+        <div class="pass">
+          <input type="password" id="name1" placeholder="Password" required />
+        </div>
+        <div class="radio">
+          <label
+            ><input
+              id="admin"
+              type="radio"
+              name="user"
+              value="admin"
+              checked
+            />admin</label
+          >
+          <label
+            ><input
+              id="casher"
+              type="radio"
+              name="user"
+              value="casher"
+            />casher</label
+          >
+        </div>
+        <div class="buttons">
+          <input type="submit" class="border-primary-subtle" value="Log-in" />
+          <input
+            type="button"
+            class="border-primary-subtle"
+            value="Create Admin Account"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      background-color: aqua;
+    }
+
+    form {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    input {
+      width: 20rem;
+      height: 2rem;
+      border-radius: 5%;
+      text-indent: 3%;
+    }
+
+    .container,
+    .reg-forms,
+    .buttons input[type="submit"],
+    .buttons[type="button"] {
+      text-align: center;
+    }
+    .reg-forms {
+      margin-top: 15%;
+    }
+    .buttons input[type="submit"],
+    .buttons input[type="button"] {
+      margin-top: 5%;
+      font-size: 1rem;
+      border-radius: 5%;
+      width: 60%;
+    }
+
+    .buttons input[type="submit"]:hover,
+    .buttons input[type="button"]:hover {
+      color: rgb(97, 97, 245);
+    }
+
+    .radio input[type="radio"] {
+      width: 10%;
+      height: 10%;
+    }
+    label {
+      padding: 5%;
+      font-size: 1.2rem;
+    }
+  </style>
+  <script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </script>
+</html>
